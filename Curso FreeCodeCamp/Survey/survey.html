@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Un dia con Tomito</h1>
+    <p id="description">Te invito a pasar un dia con toto y elegir el plan</p>
+    
+    <form id="survey-form">
+        <fieldset>
+
+            <label id="name-label">Name <input type="text" id="name" required placeholder="Paula" id="name" ></label>
+            
+            <label id="email-label">Email <input type="email" id="email" required placeholder="xxxx@example.com"></label>
+            
+            <label id="number-label">Cantidad de cojidas <span>(optional)</span><input type="number" id="cojidas" min="1" max="10" placeholder="4?"></label>
+            
+        </fieldset>
+        <fieldset>
+            <p class="mintit">¿Que preferis?</p>
+            <select name="role" id="dropdown">
+
+                <option value="">Elegir</option>
+                
+                <option value="student">Salir</option>
+                
+                <option value="instructor">Quedarla en casita</option>
+            </select>
+            <hr>
+            <p class="mintit"> ¿Queres salir conmigo?</p>
+            <label><input type="radio" name="attribute" class="inline" value="seguro"/>Seguro</label>
+            
+            <label><input type="radio" name="attribute" class="inline" value="probablemente"/>Probablemente</label>
+        </fieldset>
+        <fieldset>
+            <p class="mintit">A donde queres ir ?</p>
+            <label class="check"><input type="checkbox" value="costa-azul" class="inline">Tomar matecito</label>
+
+            <label class="check"><input type="checkbox" value="bar" class="inline" >Salir a un bar</label>
+            
+            <label class="check"><input type="checkbox" value="cine" class="inline">Ir al cine</label>
+            
+            <label class="check"><input type="checkbox" value="telo" class="inline">Ir a un telo</label>
+
+            <label class="check"><input type="checkbox" value="siesta" class="inline">Dormir siesta</label>
+
+            <label class="check"><input type="checkbox" value="camuki" class="inline">tirarse en la camuki</label>
+            
+            <label class="check"><input type="checkbox" value="desayuno" class="inline">ir a desayunar a un lugar lindo</label>
+
+            <label class="check"><input type="checkbox" value="cena" class="inline">Comer empanaditas en la camuki</label>
+
+            <label class="check"><input type="checkbox" value="resto" class="inline">Ir a un resto copado</label>
+        
+            <textarea name="comentarios" id="coments" cols="30" rows="3" placeholder="Comentarios e ideas..."></textarea>
+        </fieldset>
+        
+        <input type="submit" value="Submit" id="submit">
+
+    </form>
+</body>
+</html>
